@@ -8,39 +8,97 @@
   <ion-card>
     <ion-card-header>
       <ion-item>
-        <ion-card-title>Macatuba</ion-card-title>
+        <ion-card-title>{{previsao.name}}</ion-card-title>
         <ion-item lines="none" class="temp" slot="end">
           <ion-icon name="thermometer"></ion-icon>
-          <p>45%</p>
+          <p>{{previsao.main.temp}}%</p>
         </ion-item>
       </ion-item>
     </ion-card-header>
 
     <ion-card-content>
 
-      <ion-item class="prev_cab">
-        <ion-label>Data</ion-label>
-        <ion-label>Min/Max</ion-label>
-        <ion-label>Previsão</ion-label>
-      </ion-item>
+      <ion-row>
+          <ion-col>
+            <ion-item class="prev_cab">
+              <ion-label>Data</ion-label>
+            </ion-item>
+          </ion-col>
 
-      <ion-item class="prev">
-        <ion-label>12/08/2022</ion-label>
-        <ion-label>18°C/32°</ion-label>
-        <ion-icon name="sunny"></ion-icon>
-      </ion-item>
+          <ion-col>
+            <ion-item class="prev_cab">
+              <ion-label>Min/Max</ion-label>
+            </ion-item>
+          </ion-col>
 
-      <ion-item class="prev">
-        <ion-label>08/08/2022</ion-label>
-        <ion-label>20°C/37°</ion-label>
-        <ion-icon name="rainy"></ion-icon>
-      </ion-item>
+          <ion-col>
+            <ion-item class="prev_cab">
+              <ion-label>Previsão</ion-label>
+            </ion-item>
+          </ion-col>
+      </ion-row>
 
-      <ion-item class="prev">
-        <ion-label>12/08/2022</ion-label>
-        <ion-label>12°C/28°</ion-label>
-        <ion-icon name="cloudy"></ion-icon>
-      </ion-item>
+      <ion-row class="prev">
+        <ion-col>
+          <ion-item>
+            <ion-label>12/08/2022</ion-label>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item>
+            <ion-label>18°C/32°</ion-label>
+          </ion-item>
+        </ion-col>
+
+        <ion-col>
+          <ion-item>
+            <ion-icon name="sunny"></ion-icon>
+          </ion-item>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="prev">
+      <ion-col>
+        <ion-item>
+          <ion-label>08/08/2022</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <ion-label>20°C/37°</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <ion-icon name="rainy"></ion-icon>
+        </ion-item>
+      </ion-col>
+  </ion-row>
+
+
+    <ion-row class="prev">
+      <ion-col>
+        <ion-item>
+          <ion-label>12/08/2022</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <ion-label>12°C/28°</ion-label>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <ion-icon name="cloudy"></ion-icon>
+        </ion-item>
+      </ion-col>
+  </ion-row>
+
 
     </ion-card-content>
   </ion-card>

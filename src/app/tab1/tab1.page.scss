@@ -1,13 +1,9 @@
 .prev_cab{
-  ion-label{
-  margin-left: 1.5rem;
-  }
-}
-
-.prev{
-  margin-left: -0.5rem;
+text-align: center;
 }
 
 .prev:last-child{
-  --border-style:none;
+  ion-item:last-child{
+    --border-style:none;
+  }
 }
